@@ -31,6 +31,7 @@
             <groupId>com.github.miemiedev</groupId>
             <artifactId>mybatis-paginator</artifactId>
         </dependency>
+        <!--mybatis分页插件，经过修改的，在使用逆向时不抛异常。-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
@@ -48,8 +49,7 @@
     </dependencies>
 
     <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉,默认添加的是resource下的。 -->
-    <!--我测试不添加也是可以的-->
-<!--    <build>
+    <build>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -60,5 +60,5 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
-    </build>-->
+    </build>
 </project>
